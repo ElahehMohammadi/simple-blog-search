@@ -1,0 +1,87 @@
+//containers margin
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+p {
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* 360px */
+  min-width: $body-min-width;
+
+  > .body-container {
+
+    /* 1200px */
+    max-width: $body-max-width;
+    margin: 0 auto;
+    /* 360px */
+    min-width: $body-min-width;
+  }
+}
+
+footer {
+  /* 360px */
+  min-width: $body-min-width;
+
+  > .container {
+    max-width: $body-max-width;
+    margin: 0 auto;
+    /* 360px */
+    min-width: $body-min-width;
+  }
+}
+
+//the main padding of sides
+.container {
+  padding-left: $section-padding-x-lg;
+  padding-right: $section-padding-x-lg;
+  @media (max-width: 575.98px) {
+    padding-left: $section-padding-x-sm;
+    padding-right: $section-padding-x-sm;
+  }
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+//Icons
+.icon-xsm {
+  @include size($xsm-icon-size);
+}
+
+.icon-md {
+  @include size($md-icon-size);
+}
+
+.icon-lg {
+  @include size($lg-icon-size);
+}
+
+//buttons
+.btn {
+  &:focus,
+  &:active {
+    box-shadow: none !important;
+  }
+}
+
+
+
+
+
+
+

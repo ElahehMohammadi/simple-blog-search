@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="Assets/img/Icons/home.svg" />
+  <link rel="stylesheet" href="./Assets/styles/style.css" />
+  <title>وبلاگ - سکان آکادمی</title>
+
+</head>
+<body class="bg-white">
+<div class="body-container">
+  <header class="row">
+    <div class="container col-12">
+
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-md sticky-top "
+      >
+        <!-- Navbar Container -->
+        <div
+          class="nav-container"
+        >
+          <!-- Login btn -->
+          <a class="btn btn-secondary-2 order-3" href="#">
+            <div
+              class="btn--container "
+            >
+              <!-- Text only on large screens -->
+              <p
+                class=" t4 lh-lg d-none d-md-block order-2"
+              >
+                ورود | ثبت‌نام
+              </p>
+              <!-- Icon -->
+              <img
+                src="./Assets/img/Icons/login.svg"
+                class="btn--icon icon-sm"
+                alt="Login Icon"
+              />
+            </div>
+          </a>
+          <!-- menu icon for small sreens -->
+          <button
+            class="btn navbar-toggler order-1"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <img
+              src="./Assets/img/Icons/menu-1.svg"
+              alt="menu icon"
+              class="secondary-2 icon-md"
+            />
+          </button>
+          <!-- navbars content (collapsible on smaller screens) -->
+          <div
+            class="offcanvas offcanvas-end flex-grow-0 flex-shrink-0 order-2"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header justify-content-end">
+              <button
+                type="button"
+                class="btn"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <img
+                  src="./Assets/img/Icons/close-light.svg"
+                  alt="close sign"
+                  class="icon-md"
+                />
+              </button>
+            </div>
+            <!-- navbars content container -->
+            <div
+              class="offcanvas-body container d-flex flex-row justify-content-between align-items-start "
+            >
+              <!-- Navbar items -->
+              <ul class="navbar-nav  w-100 ">
+                <li
+                  class="nav-item order-5 d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./Assets/img/Icons/glossary.svg"
+                    alt="Glossary Icon"
+                    class="icon-md fan-vaazheh-icon d-block d-md-none"
+                  />
+                  <p class="sub1 lh-lg">فن‌واژه</p>
+                  <span class="open-state d-none d-md-inline"></span>
+                </li>
+                <li
+                  class="nav-item order-4 d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./Assets/img/Icons/podcast.svg"
+                    alt="Podcast Icon"
+                    class="icon-md radio-fullstack-icon d-block d-md-none"
+                  />
+                  <p class="sub1 lh-lg">رادیوفول‌استک</p>
+                  <span class="open-state d-none d-md-inline"></span>
+                </li>
+                <li
+                  class="nav-item order-3 d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./Assets/img/Icons/collection.svg"
+                    alt="Collection Icon"
+                    class="icon-md majmooeha-icon d-block d-md-none"
+                  />
+                  <p class="sub1 lh-lg">مجموعه‌ها</p>
+                  <span class="open-state d-none d-md-inline"></span>
+                </li>
+                <!-- the current page that is open -->
+                <li
+                  class="nav-item is-open order-2 d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./Assets/img/Icons/weblog.svg"
+                    alt="Weblog Icon"
+                    class="icon-md weblog-icon d-block d-md-none"
+                  />
+                  <p class="sub1 lh-lg">وبلاگ</p>
+                  <span class="open-state d-none d-md-inline"></span>
+                </li>
+                <li
+                  class="nav-item order-1 d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./Assets/img/Icons/academy.svg"
+                    alt="Academy Icon"
+                    class="icon-md dorehaye-amoozeshie-icon d-block d-md-none"
+                  />
+                  <p class="sub1 lh-lg">دوره‌های آموزشی</p>
+                  <span class="open-state  d-none d-md-inline"></span>
+                </li>
+                <li
+                  class="nav-item order-0 d-block d-md-none d-flex flex-row gap-2 align-items-center"
+                >
+                  <img
+                    src="./Assets/img/Icons/home.svg"
+                    alt="Home Icon"
+                    class="icon-md home-icon"
+                  />
+                  <p class="sub1 lh-lg">خانه</p>
+                  <span class="open-state"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Logo -->
+          <a class="navbar-brand order-1" href="#">
+            <img
+              class="logo"
+              alt="SokanAcademi logo"
+              src="./Assets/img/Icons/Logo.svg"
+            />
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="row breadcrumb-section">
+    <div class="container col-12">
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb align-items-center">
+          <li class="breadcrumb-item">
+            <a class="lh-lg sub1" href="#">خانه</a>
+          </li>
+          <img
+            src="./Assets/img/Icons/arrow-left.svg"
+            alt="left arrow divider"
+            class="icon-xsm"
+          />
+          <li class="lh-lg sub1 breadcrumb-item active" aria-current="page">
+            وبلاگ
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <section class="row hero-section"
+  >
+    <div class="container">
+
+      <div
+        class="heading row"
+      >
+        <div class="container-main row col-lg-6 col-md-8 col-sm-10  col-12">
+          <div class="heading--main">
+            <span
+              class="heading--main--line"
+            ></span>
+            <h2 class="heading--main--label ">وبلاگ، مقاله‌های تخصصی</h2>
+            <span
+              class="heading--main--line "
+            ></span>
+          </div>
+        </div>
+        <!-- searcher bar -->
+        <div
+          class="search-container row col-lg-6 col-md-8 col-sm-10  col-12">
+          <!--search -->
+          <form class="search" role="search">
+            <input
+              class="form-control sub1 lh-lg bg-gray-lighter gray-dark"
+              type="search"
+              placeholder="در بین مقاله‌های تخصصی جستجو کن..."
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success search--btn "
+              type="submit"
+            >
+              <img
+                src="./Assets/img/Icons/search.svg"
+                alt="search icon "
+                class="icon-lg "
+              />
+            </button>
+          </form>
+          <!--filters-->
+          <div class="filters row row-cols-md-auto row-cols-1">
+
+            <div class="dropdown col">
+              <button
+                class="btn d-flex flex-row justify-content-between align-items-center bg-gray-lighter"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./Assets/img/Icons/arrow-down.svg"
+                  alt="arrow down"
+                  class="icon--rotate icon-sm "
+                />
+                <p class="sub1 lh-lg text-gray-dark text-end">
+                  دسته‌بندی
+                </p>
+              </button>
+              <ul class="dropdown-menu container" id="#dropdown-menu-1">
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    برنامه نویسی
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    UI/UX
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    گرافیک
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    Front-end
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    Back-end
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    موبایل
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    نرم افزار
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    کسب و کار
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    امنیت
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown col">
+              <button
+                class="btn d-flex flex-row justify-content-between align-items-center bg-gray-lighter"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./Assets/img/Icons/arrow-down.svg"
+                  alt="arrow down"
+                  class="icon--rotate icon-sm"
+                />
+                <p class="sub1 lh-lg text-gray-dark text-end ">
+                  نویسنده
+                </p>
+              </button>
+              <ul class="dropdown-menu container" id="#dropdown-menu-2">
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    سجاد رنجبر
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    مهدی یحیایی
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    حمیدرضا معدنی
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown col">
+              <button
+                class="btn d-flex flex-row justify-content-between align-items-center bg-gray-lighter"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./Assets/img/Icons/arrow-down.svg"
+                  alt="arrow down"
+                  class="icon--rotate icon-sm "
+                />
+                <p class="sub1 lh-lg text-gray-dark text-end ">
+                  مرتب‌سازی
+                </p>
+              </button>
+              <ul class="dropdown-menu container" id="#dropdown-menu">
+                <li>
+                  <button
+                    class="dropdown-item lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    جدید ترین
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    قدیمی ترین
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item  lh-lg text-end text-secondary-2"
+                    type="button"
+                  >
+                    محبوب ترین
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <hr class="style-hr row">
+    </div>
+  </section>
+  <section class="row article-section">
+    <div class="container">
+      <div class="row row-cols-lg-3 row-cols-md-2  row-cols-1 justify-content-center">
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-01.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column">
+                <p class="card-title lh-lg t2">
+                  آزمون پارامتریک یا غیر پارامتریک: از کدام یک برای آزمون فرض استفاده کنیم؟
+                </p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class="t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-02.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column ">
+                <p class="t2 card-title lh-lg">معرفى ابزارهاى مهم حوزه فرانت اند</p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class="t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-03.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column">
+                <p class="card-title lh-lg t2">
+                  ٧ سوال CSS در مصاحبه‌های استخدامی که میزان تسلط شما را فاش می‌کند
+                </p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class="t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-04.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column">
+                <p class="card-title lh-lg t2">
+                  ساخت یک ربات معامله گر ساده ارزهای دیجیتال با یادگیری تقویتی در پایتون
+                </p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class="t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-05.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column">
+                <p class="card-title lh-lg t2">چگونه میتوان یک برنامه نویس وب شد؟</p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class="t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-06.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column">
+                <p class="card-title lh-lg t2">
+                  ٨ مرحله‌ی اجرای تست درخت در طراحی تجربه کاربری
+                </p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class="t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-07.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column">
+                <p class="card-title lh-lg t2">راهنمایی جامع برای تسلط بر تکنیک‌های توزیع آماری داده‌ها</p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class=" t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-08.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column "
+                   title="چگونه ساختار داده درخت دودویی (Binary Tree) در پایتون را پیاده‌سازی کنیم؟">
+                <p class="card-title lh-lg t2">
+                  چگونه ساختار داده درخت دودویی (Binary Tree) در پایتون را پیاده‌سازی کنیم؟
+                </p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class="t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-09.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column">
+                <p class="card-title lh-lg t2">کتابخانه‌های پایتون برای کار با توزیع های احتمال</p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class="t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-10.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column">
+                <p class="card-title lh-lg t2">5 دلیل قاطع برای یادگیری PHP برای آینده شغلی شما</p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class="t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-11.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column">
+                <p class="card-title lh-lg t2">آیا کامپیوترها می‌توانند اعداد تصادفی واقعی تولید کنند؟</p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class="t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon  icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./Assets/img/Cards/img-12.png" alt="course img" class="card-img-top" />
+            <div class="card-body d-flex flex-column align-items-start justify-content-between">
+              <div class="card-text d-flex flex-column">
+                <p class="card-title lh-lg t2">
+                  راهنمای جامعی برای مرتب سازی کارت
+                </p>
+                <div class="card-text--avatar">
+                  <img src="./Assets/img/Avatar-Picture.svg" alt="avatar img" class="icon-md" />
+                  <p class="t4 lh-base">سپهر نوری</p>
+                </div>
+              </div>
+              <div class="card-body--metadata">
+                <div class="meta-text">
+                  <div class="first-meta">
+                    <img src="./Assets/img/Icons/Group.svg" alt="Group icon" class="icon-md" />
+                    <p class="sub1 meta-text--text">برنامه‌نویسی</p>
+                  </div>
+                  <div class="second-meta">
+                    <img src="./Assets/img/Icons/clock.svg" alt="time" class="icon-md" />
+                    <p class="sub1 meta-text--text">6 دقیقه</p>
+                  </div>
+                </div>
+                <img src="./Assets/img/Icons/bookmark.svg" alt="bookmark" class="meta-bookmark-icon icon-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<footer class="row bg-gray-light ">
+  <div class="row container ">
+    <div class=" row  container-fluid justify-content-sm-start  align-items-start ">
+      <span class="col-lg d-none d-lg-block order-2"></span>
+
+      <div class="col-lg-2 col-sm-4 col-5 links links--fast-access ">
+        <p class="t3 lh-lg">دسترسی سریع</p>
+        <div class="links-container">
+          <!-- links -->
+          <p class="sub1">درباره ما</p>
+          <p class="sub1">تماس با ما</p>
+          <p class="sub1">همکاری با ما</p>
+          <p class="sub1">شرایط و قوانین</p>
+        </div>
+      </div>
+      <div class=" col-lg-2   col-sm-4 col-5  links links--services">
+        <p class="t3 lh-lg">خدمات سکان آکادمی</p>
+        <div class="links-container">
+          <!-- links -->
+          <p class="sub1">دوره‌های آموزشی</p>
+          <p class="sub1">وبلاگ</p>
+          <p class="sub1">سکان پلاس</p>
+          <p class="sub1">رادیوفول‌استک</p>
+          <p class="sub1">فن‌واژه</p>
+        </div>
+      </div>
+
+      <div class="col-lg col-lg-7 col-md-12 description">
+        <img src="./Assets/img/Icons/Logo.svg" alt="sokan logo">
+        <p class="sub1">ما در سکان‌آکادمی معتقدیم همه‌ی انسان‌ها حق دارند، به آموزش باکیفیت و کم‌هزینه دسترسی آسان داشته
+          باشند و همه‌ی افراد می‌توانند با آموزش درست، زندگی فردی و اجتماعی خود را بهتر کنند. با توجه به تخصص تیم ما در
+          حوزه‌ی IT و نیاز روزافزون بازار کار به متخصصان این حوزه، تولید و عرضه‌ی محتوای مهارت‌محور و تخصصی را در حوزه‌ی
+          IT جدی‌تر دنبال کردیم. در این راه از ابتدای انتخاب مسیر متناسب با توانایی و امکانات دانشجو تا یادگیری، تمرین،
+          کسب مهارت تخصصی و عمومی، و در نهایت معرفی به بازار کار همراه او هستیم...
+        </p>
+      </div>
+    </div>
+    <p class="copy-right t4 lh-lg">کلیه حقوق مادی و معنوی این وب‌سایت متعلق به سکان آکادمی می‌باشد.</p>
+  </div>
+</footer>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
